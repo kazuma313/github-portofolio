@@ -7,6 +7,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden; /* Prevent horizontal scroll issues */
 }
 
 body {
@@ -14,6 +15,7 @@ body {
   line-height: 1.6;
   color: #333;
   overflow-x: hidden;
+  position: relative; /* Establish stacking context */
 }
 
 .container {
@@ -124,6 +126,7 @@ body {
   align-items: center;
   position: relative;
   overflow: hidden;
+  will-change: transform; /* Optimize for animations */
 }
 
 .hero::before {
@@ -135,6 +138,7 @@ body {
   bottom: 0;
   background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="rgba(255,255,255,0.1)" points="0,1000 1000,0 1000,1000"/></svg>');
   background-size: cover;
+  pointer-events: none; /* Prevent interference with scrolling */
 }
 
 .hero-container {
@@ -165,18 +169,11 @@ body {
 
 .typing-text {
   display: inline-block;
+  min-height: 1.2em; /* Prevent height jumping */
   border-right: 3px solid white;
-  animation: typing 4s steps(30) infinite, blink 1s infinite;
-}
-
-@keyframes typing {
-  0%,
-  50% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
+  animation: blink 1s infinite;
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden; /* Hide overflow during animation */
 }
 
 @keyframes blink {
@@ -391,6 +388,8 @@ body {
 /* Section Styles */
 section {
   padding: 100px 0;
+  position: relative;
+  z-index: 1; /* Ensure sections stay above hero transforms */
 }
 
 .section-header {
@@ -418,6 +417,9 @@ section {
 /* About Section */
 .about {
   background: #f8f9fa;
+  position: relative;
+  z-index: 2; /* Higher z-index to stay above hero */
+  transform: translateZ(0); /* Create new stacking context */
 }
 
 .about-content {

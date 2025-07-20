@@ -128,26 +128,49 @@ document.addEventListener("DOMContentLoaded", () => {
   observer.observe(document.querySelector(".languages-section"))
 })
 
-// Typing animation for hero title
+// Typing animation for hero title - Fixed version
 function typeWriter() {
-  const text = "Hi, I'm Kurnia Zulda Matondang"
+  const fullText = "Hi, I'm Kurnia Zulda Matondang"
   const element = document.querySelector(".typing-text")
-  let i = 0
+
+  if (!element) return
+
+  let charIndex = 0
+  let isDeleting = false
+  let isPaused = false
 
   function type() {
-    if (i < text.length) {
-      element.textContent = text.substring(0, i + 1)
-      i++
-      setTimeout(type, 100)
-    } else {
+    if (isPaused) {
+      setTimeout(type, 2000) // Pause for 2 seconds when complete
+      isPaused = false
+      return
+    }
+
+    if (!isDeleting && charIndex < fullText.length) {
+      // Typing forward
+      element.textContent = fullText.substring(0, charIndex + 1)
+      charIndex++
+      setTimeout(type, 80) // Slower, more natural typing speed
+    } else if (!isDeleting && charIndex === fullText.length) {
+      // Finished typing, pause then start deleting
+      isPaused = true
       setTimeout(() => {
-        i = 0
-        element.textContent = ""
-        setTimeout(type, 1000)
-      }, 3000)
+        isDeleting = true
+        type()
+      }, 3000) // Wait 3 seconds before starting to delete
+    } else if (isDeleting && charIndex > 0) {
+      // Deleting backward
+      element.textContent = fullText.substring(0, charIndex - 1)
+      charIndex--
+      setTimeout(type, 50) // Faster deletion
+    } else if (isDeleting && charIndex === 0) {
+      // Finished deleting, start typing again
+      isDeleting = false
+      setTimeout(type, 500) // Short pause before retyping
     }
   }
 
+  // Start the animation
   type()
 }
 
@@ -175,11 +198,20 @@ document.addEventListener("DOMContentLoaded", () => {
 // Add parallax effect to hero section
 window.addEventListener("scroll", () => {
   const scrolled = window.pageYOffset
-  const parallax = document.querySelector(".hero")
-  const speed = scrolled * 0.5
 
-  if (parallax) {
-    parallax.style.transform = `translateY(${speed}px)`
+  // Only apply parallax to hero background, not the entire section
+  const heroBackground = document.querySelector(".hero::before")
+  if (scrolled < window.innerHeight) {
+    // Subtle parallax effect only when hero is visible
+    const speed = scrolled * 0.2 // Reduced speed
+    document.querySelector(".hero").style.transform = `translateY(${speed}px)`
+  }
+
+  // Navbar scroll effect (keep this)
+  if (scrolled > 100) {
+    navbar.classList.add("scrolled")
+  } else {
+    navbar.classList.remove("scrolled")
   }
 })
 
