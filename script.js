@@ -16,6 +16,46 @@ document.querySelectorAll(".nav-link").forEach((n) =>
   }),
 )
 
+// Theme Toggle Functionality
+function initThemeToggle() {
+  const themeToggle = document.getElementById("theme-toggle")
+  const themeIcon = document.getElementById("theme-icon")
+  const body = document.body
+
+  // Check for saved theme preference or default to 'light'
+  const currentTheme = localStorage.getItem("theme") || "light"
+
+  // Apply the saved theme
+  body.setAttribute("data-theme", currentTheme)
+  updateThemeIcon(currentTheme)
+
+  // Theme toggle click handler
+  themeToggle.addEventListener("click", () => {
+    const currentTheme = body.getAttribute("data-theme")
+    const newTheme = currentTheme === "dark" ? "light" : "dark"
+
+    // Apply new theme
+    body.setAttribute("data-theme", newTheme)
+    localStorage.setItem("theme", newTheme)
+    updateThemeIcon(newTheme)
+
+    // Add a subtle animation effect
+    themeToggle.style.transform = "scale(0.9)"
+    setTimeout(() => {
+      themeToggle.style.transform = "scale(1)"
+    }, 150)
+  })
+}
+
+function updateThemeIcon(theme) {
+  const themeIcon = document.getElementById("theme-icon")
+  if (theme === "dark") {
+    themeIcon.className = "fas fa-moon"
+  } else {
+    themeIcon.className = "fas fa-sun"
+  }
+}
+
 // Navbar scroll effect
 window.addEventListener("scroll", () => {
   if (window.scrollY > 100) {
@@ -111,6 +151,7 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observe elements for animation
 document.addEventListener("DOMContentLoaded", () => {
+  initThemeToggle()
   // Add AOS attributes to elements
   const elementsToAnimate = document.querySelectorAll(
     ".timeline-item, .skill-category, .education-card, .contact-item, .about-stats, .languages-section",
