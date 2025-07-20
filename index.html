@@ -13,7 +13,6 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <img src="data/images/logo.png" alt="KZM Logo" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
                 <span class="logo-text">KZM</span>
             </div>
             <ul class="nav-menu" id="nav-menu">
@@ -28,6 +27,9 @@
                 </li>
                 <li class="nav-item">
                     <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#blog" class="nav-link">Blog</a>
                 </li>
                 <li class="nav-item">
                     <a href="#skills" class="nav-link">Skills</a>
@@ -54,9 +56,9 @@
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <div class="hero-text">
+                <div class="hero-text" data-aos="fade-right">
                     <h1 class="hero-title">
-                        <span class="typing-text">Hi, I'm Kurnia Zulda Matondang</span>
+                        <span class="typing-text" id="typing-name"></span>
                     </h1>
                     <h2 class="hero-subtitle">Artificial Intelligence Developer</h2>
                     <p class="hero-description">
@@ -66,15 +68,12 @@
                     <div class="hero-buttons">
                         <a href="#contact" class="btn btn-primary">Get In Touch</a>
                         <a href="#about" class="btn btn-secondary">Learn More</a>
-                        <a href="data/documents/resume.pdf" class="btn btn-outline" target="_blank">
+                        <a href="data/documents/resume.pdf" class="btn btn-outline">
                             <i class="fas fa-download"></i> Download CV
                         </a>
                     </div>
                 </div>
-                <div class="hero-visual">
-                    <div class="hero-image">
-                        <img src="data/images/profile.jpg" alt="Kurnia Zulda Matondang" class="profile-img" onerror="this.style.display='none';">
-                    </div>
+                <div class="hero-visual" data-aos="fade-left" data-aos-delay="200">
                     <div class="floating-elements">
                         <div class="floating-card" data-tech="Python">
                             <i class="fab fa-python"></i>
@@ -92,7 +91,7 @@
                 </div>
             </div>
         </div>
-        <div class="scroll-indicator">
+        <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="400">
             <div class="scroll-arrow"></div>
         </div>
     </section>
@@ -100,12 +99,12 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-aos="fade-up">
                 <h2 class="section-title">About Me</h2>
                 <p class="section-subtitle">Passionate about AI innovation and problem-solving</p>
             </div>
             <div class="about-content">
-                <div class="about-text">
+                <div class="about-text" data-aos="fade-right">
                     <p class="about-description">
                         I have a strong foundation in AI, machine learning, and data science, with hands-on experience in Python programming, 
                         machine learning models, NLP, and computer vision. My passion lies in using AI to solve complex problems and drive innovation.
@@ -115,9 +114,9 @@
                         to remain at the forefront of AI. I thrive in collaborative environments and aim to work on cutting-edge technologies 
                         that push the boundaries of AI and data-driven solutions.
                     </p>
-                    <div class="about-stats">
+                    <div class="about-stats" data-aos="fade-up" data-aos-delay="200">
                         <div class="stat-item">
-                            <span class="stat-number" data-count="3">0</span>
+                            <span class="stat-number" data-count="4">0</span>
                             <span class="stat-label">Years Experience</span>
                         </div>
                         <div class="stat-item">
@@ -130,14 +129,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="about-info">
+                <div class="about-info" data-aos="fade-left" data-aos-delay="100">
                     <div class="info-card">
                         <h3>Key Competencies</h3>
                         <ul class="competencies-list">
                             <li><i class="fas fa-check"></i> Python Programming</li>
                             <li><i class="fas fa-check"></i> Machine Learning & Deep Learning</li>
                             <li><i class="fas fa-check"></i> Natural Language Processing (NLP)</li>
-                            <li><i class="fas fa-check"></i> Generative AI</li>
                             <li><i class="fas fa-check"></i> Computer Vision</li>
                             <li><i class="fas fa-check"></i> Data Science & Analytics</li>
                             <li><i class="fas fa-check"></i> Retrieval-augmented generation (RAG)</li>
@@ -153,20 +151,17 @@
     <!-- Experience Section -->
     <section id="experience" class="experience">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-aos="fade-up">
                 <h2 class="section-title">Professional Experience</h2>
                 <p class="section-subtitle">My journey in AI and technology</p>
             </div>
             <div class="timeline">
-                <div class="timeline-item" data-aos="fade-up">
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <div class="timeline-date">March 2025 - Present</div>
                         <h3 class="timeline-title">Artificial Intelligence Analyst</h3>
-                        <h4 class="timeline-company">
-                            <img src="data/images/companies/icon-plus.png" alt="PT Icon Plus" class="company-logo" onerror="this.style.display='none';">
-                            PT Icon Plus
-                        </h4>
+                        <h4 class="timeline-company">PT Icon Plus</h4>
                         <ul class="timeline-description">
                             <li>Assisted in the development of a scalable AI-powered customer service chatbot using LangChain and LangGraph</li>
                             <li>Researched and supported deployment of on-premise large language models (LLMs)</li>
@@ -176,15 +171,12 @@
                     </div>
                 </div>
 
-                <div class="timeline-item" data-aos="fade-up">
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <div class="timeline-date">November 2024 - February 2025</div>
                         <h3 class="timeline-title">Artificial Intelligence Consultant</h3>
-                        <h4 class="timeline-company">
-                            <img src="data/images/companies/pln.png" alt="PT PLN" class="company-logo" onerror="this.style.display='none';">
-                            PT PLN (Persero)
-                        </h4>
+                        <h4 class="timeline-company">PT PLN (Persero)</h4>
                         <ul class="timeline-description">
                             <li>Collaborated with senior consultants to align PLN's business needs with cutting-edge AI solutions</li>
                             <li>Provided technical insights and critical assessments of ongoing AI projects</li>
@@ -194,15 +186,12 @@
                     </div>
                 </div>
 
-                <div class="timeline-item" data-aos="fade-up">
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <div class="timeline-date">April 2024 - October 2024</div>
                         <h3 class="timeline-title">Computer Vision Engineer</h3>
-                        <h4 class="timeline-company">
-                            <img src="data/images/companies/indismart.png" alt="PT Indismart" class="company-logo" onerror="this.style.display='none';">
-                            PT Indismart Kreatif Solusi
-                        </h4>
+                        <h4 class="timeline-company">PT Indismart Kreatif Solusi</h4>
                         <ul class="timeline-description">
                             <li>Designed, trained, and evaluated OCR model for container number detection</li>
                             <li>Improved image classification system for house vulnerability assessment</li>
@@ -212,15 +201,12 @@
                     </div>
                 </div>
 
-                <div class="timeline-item" data-aos="fade-up">
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <div class="timeline-date">June 2023 - September 2023</div>
                         <h3 class="timeline-title">Machine Learning Engineer</h3>
-                        <h4 class="timeline-company">
-                            <img src="data/images/companies/optimasi.png" alt="Optimasi.ai" class="company-logo" onerror="this.style.display='none';">
-                            Optimasi.ai
-                        </h4>
+                        <h4 class="timeline-company">Optimasi.ai</h4>
                         <ul class="timeline-description">
                             <li>Developed advanced sentiment analysis models for Indonesian language</li>
                             <li>Led data-driven topic clustering and applied advanced summarization techniques</li>
@@ -236,19 +222,49 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-aos="fade-up">
                 <h2 class="section-title">Featured Projects</h2>
                 <p class="section-subtitle">Showcasing my AI and ML implementations</p>
             </div>
             <div class="projects-grid" id="projects-grid">
-                <!-- Projects will be loaded dynamically from data/projects.json -->
+                <!-- Projects will be loaded dynamically -->
+                <div class="loading-message">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Loading projects...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Latest Blog Posts</h2>
+                <p class="section-subtitle">Insights, tutorials, and thoughts on AI and technology</p>
             </div>
             
-            <!-- Project Modal -->
-            <div id="project-modal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <div id="modal-body"></div>
+            <!-- Blog Controls -->
+            <div class="blog-controls" data-aos="fade-up" data-aos-delay="100">
+                <div class="blog-search">
+                    <input type="text" id="blog-search" placeholder="Search blog posts..." class="search-input">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                <div class="blog-categories">
+                    <button class="category-btn active" data-category="all">All</button>
+                    <button class="category-btn" data-category="AI">AI</button>
+                    <button class="category-btn" data-category="Machine Learning">ML</button>
+                    <button class="category-btn" data-category="Tutorial">Tutorial</button>
+                    <button class="category-btn" data-category="Career">Career</button>
+                </div>
+            </div>
+            
+            <!-- Blog Grid -->
+            <div class="blog-grid" id="blog-grid">
+                <!-- Blog posts will be loaded dynamically -->
+                <div class="loading-message">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Loading blog posts...</p>
                 </div>
             </div>
         </div>
@@ -257,12 +273,12 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-aos="fade-up">
                 <h2 class="section-title">Technical Skills</h2>
                 <p class="section-subtitle">Technologies and tools I work with</p>
             </div>
             <div class="skills-grid">
-                <div class="skill-category" data-aos="fade-up">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
                     <h3 class="category-title">
                         <i class="fas fa-brain"></i>
                         Machine Learning
@@ -295,7 +311,7 @@
                     </div>
                 </div>
 
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
                     <h3 class="category-title">
                         <i class="fas fa-code"></i>
                         Programming
@@ -322,7 +338,7 @@
                     </div>
                 </div>
 
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
                     <h3 class="category-title">
                         <i class="fas fa-database"></i>
                         Databases
@@ -349,13 +365,13 @@
                         <div class="skill-item">
                             <span class="skill-name">Milvus</span>
                             <div class="skill-bar">
-                                <div class="skill-progress" data-width="70"></div>
+                                <div class="skill-progress" data-width="85"></div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
                     <h3 class="category-title">
                         <i class="fas fa-robot"></i>
                         AI Frameworks
@@ -394,21 +410,18 @@
     <!-- Education Section -->
     <section id="education" class="education">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-aos="fade-up">
                 <h2 class="section-title">Education & Certifications</h2>
                 <p class="section-subtitle">Academic background and professional development</p>
             </div>
             <div class="education-grid">
-                <div class="education-card" data-aos="fade-up">
+                <div class="education-card" data-aos="fade-right" data-aos-delay="100">
                     <div class="education-icon">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
                     <div class="education-content">
                         <h3 class="education-title">Bachelor's Degree in Informatics Engineering</h3>
-                        <h4 class="education-institution">
-                            <img src="data/images/universities/uin-malang.png" alt="UIN Malang" class="university-logo" onerror="this.style.display='none';">
-                            Universitas Islam Negri Maulana Malik Ibrahim Malang
-                        </h4>
+                        <h4 class="education-institution">Universitas Islam Negri Maulana Malik Ibrahim Malang</h4>
                         <div class="education-gpa">GPA: 3.75/4.00</div>
                         <p class="education-description">
                             Comprehensive study in computer science fundamentals, software engineering, 
@@ -417,16 +430,13 @@
                     </div>
                 </div>
 
-                <div class="education-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="education-card" data-aos="fade-left" data-aos-delay="200">
                     <div class="education-icon">
                         <i class="fas fa-certificate"></i>
                     </div>
                     <div class="education-content">
                         <h3 class="education-title">Bootcamp Artificial Intelligence</h3>
-                        <h4 class="education-institution">
-                            <img src="data/images/certifications/ruangguru.png" alt="Ruang Guru" class="university-logo" onerror="this.style.display='none';">
-                            Skill Academy Pro Ruang Guru
-                        </h4>
+                        <h4 class="education-institution">Skill Academy Pro Ruang Guru</h4>
                         <div class="education-award">Excellence Award</div>
                         <p class="education-description">
                             Intensive training program covering advanced AI concepts, machine learning algorithms, 
@@ -436,7 +446,7 @@
                 </div>
             </div>
 
-            <div class="languages-section">
+            <div class="languages-section" data-aos="fade-up" data-aos-delay="300">
                 <h3 class="languages-title">Languages</h3>
                 <div class="languages-grid">
                     <div class="language-item">
@@ -465,13 +475,13 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-aos="fade-up">
                 <h2 class="section-title">Get In Touch</h2>
                 <p class="section-subtitle">Let's discuss how we can work together</p>
             </div>
             <div class="contact-content">
                 <div class="contact-info">
-                    <div class="contact-item" data-aos="fade-up">
+                    <div class="contact-item" data-aos="fade-right" data-aos-delay="100">
                         <div class="contact-icon">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
@@ -480,7 +490,7 @@
                             <p>Jakarta, Indonesia</p>
                         </div>
                     </div>
-                    <div class="contact-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-item" data-aos="fade-right" data-aos-delay="200">
                         <div class="contact-icon">
                             <i class="fas fa-phone"></i>
                         </div>
@@ -489,7 +499,7 @@
                             <p>+62 822 3015 1495</p>
                         </div>
                     </div>
-                    <div class="contact-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-item" data-aos="fade-right" data-aos-delay="300">
                         <div class="contact-icon">
                             <i class="fas fa-envelope"></i>
                         </div>
@@ -499,7 +509,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="contact-links">
+                <div class="contact-links" data-aos="fade-left" data-aos-delay="100">
                     <a href="https://www.linkedin.com/in/kurnia-zulda" class="contact-link" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-linkedin"></i>
                         <span>LinkedIn Profile</span>
@@ -522,7 +532,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up">
         <div class="container">
             <div class="footer-content">
                 <p>&copy; 2025 Kurnia Zulda Matondang. All rights reserved.</p>
@@ -530,6 +540,32 @@
             </div>
         </div>
     </footer>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal enhanced-modal">
+        <div class="modal-content enhanced-modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title"></h2>
+                <span class="close enhanced-close">&times;</span>
+            </div>
+            <div class="modal-body enhanced-modal-body" id="modal-body">
+                <!-- Dynamic content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Modal -->
+    <div id="blog-modal" class="modal enhanced-modal">
+        <div class="modal-content enhanced-modal-content">
+            <div class="modal-header">
+                <h2 id="blog-modal-title"></h2>
+                <span class="close enhanced-close">&times;</span>
+            </div>
+            <div class="modal-body enhanced-modal-body" id="blog-modal-body">
+                <!-- Dynamic content will be loaded here -->
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

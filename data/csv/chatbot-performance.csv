@@ -1,11 +1,8 @@
-Metric,Value,Unit,Date
-Response Accuracy,95.2,%,2025-01-15
-Average Response Time,1.2,seconds,2025-01-15
-Customer Satisfaction,94.8,%,2025-01-15
-Daily Queries Handled,2500,queries,2025-01-15
-Successful Resolutions,92.1,%,2025-01-15
-Escalation Rate,7.9,%,2025-01-15
-Uptime,99.9,%,2025-01-15
-Languages Supported,3,count,2025-01-15
-Active Users,1250,users,2025-01-15
-Cost Reduction,70,%,2025-01-15
+Metric,Value,Date,Notes
+Customer Satisfaction,95%,2025-01-15,Based on user feedback surveys
+Response Time Reduction,70%,2025-01-15,Compared to previous manual system
+Query Resolution Rate,92%,2025-01-15,Percentage of queries resolved without human intervention
+Average Response Time,2.3s,2025-01-15,Average time to generate response
+Daily Active Users,1250,2025-01-15,Number of unique users per day
+Languages Supported,3,2025-01-15,Indonesian English Javanese
+Deployment Status,Production,2025-01-15,Successfully deployed for PLN Group
