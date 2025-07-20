@@ -1,71 +1,182 @@
-# 👋 Hi, I'm Kurnia Zulda
+# Kurnia Zulda Matondang - AI Developer Portfolio
 
-AI Engineer | Computer Vision | LLM Agents | Python Developer
+A modern, interactive portfolio website showcasing my expertise in Artificial Intelligence, Machine Learning, and Data Science.
 
-I specialize in building intelligent systems using deep learning, LLMs, and practical automation. Since 2022, I've worked professionally in the AI field with a strong focus on model deployment and real-world integrations.
+## 🚀 Features
+
+- **Responsive Design**: Optimized for all devices and screen sizes
+- **Interactive Elements**: Smooth animations, hover effects, and dynamic content
+- **Modern UI/UX**: Clean, professional design with gradient accents
+- **Performance Optimized**: Fast loading with efficient code structure
+- **Accessibility**: Built with accessibility best practices
+- **Cross-browser Compatible**: Works seamlessly across all modern browsers
+
+## 🛠️ Technologies Used
+
+- **HTML5**: Semantic markup and structure
+- **CSS3**: Modern styling with Flexbox, Grid, and animations
+- **JavaScript (ES6+)**: Interactive functionality and dynamic content
+- **Font Awesome**: Professional icons
+- **Google Fonts**: Typography enhancement
+
+## 📱 Sections
+
+### 🏠 Hero Section
+- Dynamic typing animation
+- Floating technology cards
+- Call-to-action buttons
+- Parallax scrolling effect
+
+### 👨‍💻 About Me
+- Professional summary
+- Key competencies
+- Animated statistics counters
+- Skills overview
+
+### 💼 Professional Experience
+- Interactive timeline design
+- Detailed work history
+- Company information
+- Key achievements and responsibilities
+
+### 🔧 Technical Skills
+- Categorized skill sets
+- Animated progress bars
+- Technology proficiency levels
+- Framework and tool expertise
+
+### 🎓 Education & Certifications
+- Academic background
+- Professional certifications
+- Language proficiency
+- Achievement highlights
+
+### 📞 Contact Information
+- Multiple contact methods
+- Social media links
+- Professional portfolio links
+- Interactive contact cards
+
+## 🎨 Design Features
+
+- **Color Scheme**: Professional gradient (Purple to Blue)
+- **Typography**: Clean, readable fonts with proper hierarchy
+- **Animations**: Smooth CSS transitions and JavaScript interactions
+- **Layout**: Modern grid and flexbox layouts
+- **Visual Elements**: Floating cards, progress bars, and interactive timelines
+
+## 📊 Performance Features
+
+- **Smooth Scrolling**: Enhanced navigation experience
+- **Lazy Loading**: Optimized content loading
+- **Progress Indicator**: Visual scroll progress
+- **Mobile Optimization**: Touch-friendly interface
+- **Fast Loading**: Optimized assets and code
+
+## 🔧 Setup Instructions
+
+1. **Clone or Download**: Get the project files
+2. **File Structure**: Ensure all files are in the same directory:
+   \`\`\`
+   portfolio/
+   ├── index.html
+   ├── styles.css
+   ├── script.js
+   └── README.md
+   \`\`\`
+3. **Open**: Launch `index.html` in your web browser
+4. **Customize**: Modify content, colors, and styling as needed
+
+## 📱 Mobile Responsiveness
+
+- **Breakpoints**: 768px (tablet) and 480px (mobile)
+- **Navigation**: Collapsible hamburger menu
+- **Layout**: Adaptive grid systems
+- **Touch**: Optimized for touch interactions
+- **Performance**: Lightweight for mobile networks
+
+## 🌐 Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+- Mobile browsers (iOS Safari, Chrome Mobile)
+
+## 📈 SEO Optimization
+
+- Semantic HTML structure
+- Meta tags and descriptions
+- Proper heading hierarchy
+- Alt text for images
+- Clean URL structure
+
+## 🎯 Key Highlights
+
+### Professional Experience
+- **4+ Years** in AI and Machine Learning
+- **Multiple Companies**: Icon Plus, PLN, Indismart, Optimasi.ai
+- **Diverse Projects**: NLP, Computer Vision, RAG systems
+- **Leadership**: Technical lead and consultant roles
+
+### Technical Expertise
+- **Programming**: Python, JavaScript, SQL
+- **ML Frameworks**: TensorFlow, PyTorch, Scikit-learn
+- **AI Tools**: LangChain, Hugging Face, Transformers
+- **Databases**: MySQL, PostgreSQL, MongoDB, Milvus
+- **APIs**: FastAPI, Flask, RESTful services
+
+### Education
+- **Bachelor's Degree**: Informatics Engineering (GPA: 3.75)
+- **Certification**: AI Bootcamp Excellence Award
+- **Languages**: Indonesian (Native), English (TOEFL: 527)
+
+## 🚀 Deployment
+
+### GitHub Pages
+1. Upload files to GitHub repository
+2. Enable GitHub Pages in repository settings
+3. Select source branch (main/master)
+4. Access via `https://username.github.io/repository-name`
+
+### Local Development
+1. Use Live Server extension in VS Code
+2. Or use Python: `python -m http.server 8000`
+3. Or use Node.js: `npx serve .`
+
+## 📞 Contact Information
+
+- **Email**: kurniazuldam@gmail.com
+- **Phone**: +62 822 3015 1495
+- **LinkedIn**: [linkedin.com/in/kurnia-zulda](https://www.linkedin.com/in/kurnia-zulda)
+- **Portfolio**: [kurnia-zulda-matondang.streamlit.app](https://kurnia-zulda-matondang.streamlit.app/)
+- **Location**: Jakarta, Indonesia
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🤝 Contributing
+
+Feel free to fork this project and customize it for your own portfolio. If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request.
+
+## 🙏 Acknowledgments
+
+- Font Awesome for the beautiful icons
+- Google Fonts for typography
+- Inspiration from modern web design trends
+- The AI and ML community for continuous learning
+
+## 📝 Changelog
+
+### Version 1.0.0
+- Initial release with complete portfolio functionality
+- Responsive design implementation
+- Interactive animations and effects
+- Professional content structure
 
 ---
 
-## 🛠 Tech Stack
+**Built with ❤️ and passion for AI innovation**
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-blueviolet?style=for-the-badge)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/Postgres-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
-
----
-
-## 🚀 Featured Projects
-
-### 🧠 LLM Assistant with LangChain + Notion + Discord
-
-> Personal AI agent that summarizes tasks, reads from Notion, and responds in Discord. Powered by LangChain and OpenAI.
-
-- 🧰 Tech: LangChain, FastAPI, Postgres, OpenAI, Discord API  
-- 📂 GitHub: [LLM Assistant Repo](https://github.com/yourusername/llm-assistant)  
-- 🎥 Demo Video: [Watch on YouTube](https://youtu.be/demo-link)
-
-![LLM Assistant](https://github.com/yourusername/llm-assistant/blob/main/demo.gif)
-
----
-
-### 🧍 Face Detection Attendance System
-
-> Real-time attendance tracker using face embeddings and clustering. Built with PyTorch and OpenCV.
-
-- 🧰 Tech: PyTorch, OpenCV, Flask  
-- 📂 GitHub: [Face Attendance Repo](https://github.com/yourusername/face-attendance)
-
-![Face Detection Attendance](https://github.com/yourusername/face-attendance/blob/main/sample_output.png)
-
----
-
-## 👨‍💻 About Me
-
-Since 2022, I’ve been building intelligent systems that bridge research and real-world solutions. I enjoy working with cutting-edge tools like LangChain, Transformers, and PyTorch to bring AI to life.
-
-🔍 I’m especially interested in:
-- LLM agents for productivity and automation
-- Scalable AI backend systems
-- Computer vision in smart applications
-
----
-
-## 📈 GitHub Stats
-
-![Kurnia's GitHub stats](https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&theme=radical)
-
----
-
-## 📫 Let's Connect
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourlinkedin)  
-📧 Email: your.email@example.com  
-🌐 Website: [yourwebsite.com](https://yourwebsite.com)
-
----
-
-_Thanks for visiting my profile!_
+*Last updated: January 2025*

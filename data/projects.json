@@ -1,0 +1,62 @@
+[
+  {
+    "title": "AI-Powered Customer Service Chatbot",
+    "description": "Scalable chatbot using LangChain and LangGraph for automated customer support with multi-agent framework.",
+    "image": "data/images/projects/chatbot-demo.jpg",
+    "video": "data/videos/chatbot-demo.mp4",
+    "technologies": ["Python", "LangChain", "LangGraph", "FastAPI", "Vector Database"],
+    "category": "NLP",
+    "demo": "https://chatbot-demo.example.com",
+    "github": "https://github.com/kurniazulda/ai-chatbot",
+    "documentation": "data/documents/chatbot-documentation.pdf",
+    "details": "Developed a comprehensive chatbot solution that can handle multiple customer queries simultaneously with high accuracy and contextual understanding. The system uses RAG (Retrieval-Augmented Generation) for improved response quality.",
+    "challenges": "Implementing multi-tenant vector database management and ensuring response consistency across different conversation contexts.",
+    "results": "Achieved 95% customer satisfaction rate and reduced response time by 70%. Successfully deployed for PLN Group's customer service operations.",
+    "csvData": "data/csv/chatbot-performance.csv"
+  },
+  {
+    "title": "Indonesian Sentiment Analysis Model",
+    "description": "Advanced sentiment analysis specifically tailored for Indonesian language nuances and cultural context.",
+    "image": "data/images/projects/sentiment-analysis.jpg",
+    "technologies": ["Python", "TensorFlow", "BERT", "Transformers", "Hugging Face"],
+    "category": "NLP",
+    "github": "https://github.com/kurniazulda/indonesian-sentiment",
+    "details": "Created a robust sentiment analysis model that understands Indonesian language context, slang, and cultural nuances with 92% accuracy. The model was trained on a diverse dataset of Indonesian social media posts, news articles, and customer reviews.",
+    "challenges": "Handling Indonesian language variations, regional dialects, and mixed language usage (Indonesian-English code-switching).",
+    "results": "Achieved 92% accuracy on test dataset, outperforming existing Indonesian sentiment analysis models by 15%.",
+    "csvData": "data/csv/sentiment-results.csv"
+  },
+  {
+    "title": "OCR Container Number Detection",
+    "description": "Computer vision system for automatic container number extraction from images in logistics operations.",
+    "image": "data/images/projects/ocr-container.jpg",
+    "video": "data/videos/ocr-demo.mp4",
+    "technologies": ["Python", "OpenCV", "TensorFlow", "OCR", "NVIDIA Jetson"],
+    "category": "Computer Vision",
+    "github": "https://github.com/kurniazulda/ocr-container",
+    "details": "Implemented an end-to-end OCR solution for logistics automation, reducing manual data entry by 85%. The system works in real-time on edge devices and can handle various lighting conditions and container orientations.",
+    "challenges": "Dealing with varying image quality, different container number formats, and real-time processing constraints on edge devices.",
+    "results": "Reduced manual data entry by 85% and improved processing speed by 300%. Successfully deployed on NVIDIA Jetson devices.",
+    "csvData": "data/csv/ocr-accuracy.csv"
+  },
+  {
+    "title": "House Vulnerability Classification",
+    "description": "Image classification system for assessing building structural vulnerability using computer vision.",
+    "image": "data/images/projects/house-classification.jpg",
+    "technologies": ["Python", "PyTorch", "FastAPI", "Computer Vision"],
+    "category": "Computer Vision",
+    "details": "Developed a classification system that categorizes building structures into Confined Masonry, RC Infilled Masonry, Timber Structure, and Unconfined Masonry with high accuracy for disaster preparedness assessment.",
+    "results": "Achieved 88% classification accuracy and enabled rapid assessment of building vulnerability in disaster-prone areas."
+  },
+  {
+    "title": "Multi-Agent RAG Framework",
+    "description": "Blueprint design for a multi-agent AI framework with orchestration logic and system integrations.",
+    "image": "data/images/projects/multi-agent-rag.jpg",
+    "technologies": ["Python", "LangGraph", "Vector Database", "Milvus", "FastAPI"],
+    "category": "AI Framework",
+    "documentation": "data/documents/multi-agent-framework.pdf",
+    "details": "Designed and implemented a scalable multi-agent framework for complex AI workflows, featuring agent role definition, communication patterns, and system integrations for enterprise applications.",
+    "challenges": "Coordinating multiple AI agents, managing state consistency, and ensuring scalable performance across different use cases.",
+    "results": "Successfully created a blueprint that can handle millions of vectors across multi-tenant environments with optimized retrieval performance."
+  }
+]
